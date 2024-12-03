@@ -1,0 +1,169 @@
+@import "../../assets/scss/base.scss";
+
+.card {
+  border-radius: 10px;
+  flex: 1 1 100%;
+
+  &__title {
+    max-width: 635px;
+    margin-bottom: 22px;
+    font-family: $fontLato;
+    font-size: 74px;
+    font-weight: 800;
+    line-height: 74px;
+    color: $colorWhite;
+  }
+
+  &__description {
+    margin-bottom: 22px;
+    font-family: $fontLato;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 31.2px;
+    color: $colorWhite;
+  }
+
+  &:nth-child(1) {
+    padding: 36px 35px 37px;
+    background: $gradient,
+      url("../../assets/images/offers-1.jpg") center / cover no-repeat;
+  }
+
+  &:nth-child(2) {
+    max-width: calc(50% - 20px);
+    padding: 49px 35px 36px;
+    background: $gradient,
+      url("../../assets/images/offers-2.jpg") center / cover no-repeat;
+
+    .card__title {
+      max-width: 300px;
+    }
+  }
+
+  &:nth-child(3) {
+    max-width: calc(50% - 20px);
+    padding: 50px 35px 35px;
+    background: $gradient,
+      url("../../assets/images/offers-3.jpg") center / cover no-repeat;
+
+    .card__title {
+      max-width: 250px;
+    }
+  }
+
+  &:nth-child(2),
+  &:nth-child(3) {
+    .card__title {
+      font-size: 46px;
+      line-height: 46px;
+    }
+
+    .card__description {
+      font-size: 24px;
+      line-height: 28.8px;
+    }
+  }
+
+  &:nth-child(4) {
+    padding: 39px 35px 41px;
+    background: $gradient,
+      url("../../assets/images/offers-4.jpg") center / cover no-repeat;
+  }
+
+  & {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 1247px) {
+  .card {
+    &__title {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(4) {
+      padding: 106.5px 26px 27.5px;
+      max-width: calc(50% - 15px);
+    }
+
+    &:nth-child(1) {
+      .card__title {
+        max-width: 180px;
+      }
+    }
+
+    &:nth-child(4) {
+      .card__title {
+        max-width: 280px;
+      }
+    }
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      max-width: calc(50% - 15px);
+      padding: 106.5px 26px 27.5px;
+
+      .card__title {
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      .card__description {
+        font-size: 16px;
+        line-height: 19.2px;
+      }
+    }
+
+    &:nth-child(2) {
+      .card__title {
+        max-width: 280px;
+      }
+    }
+
+    &:nth-child(3) {
+      .card__title {
+        max-width: 240px;
+      }
+    }
+
+    .button {
+      width: 161px;
+      height: 33px;
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    &:nth-child(odd),
+    &:nth-child(even) {
+      max-width: 100%;
+    }
+
+    &:nth-child(1) {
+      padding: 102px 27px 32px;
+    }
+
+    &:nth-child(2) {
+      padding: 98px 26px 36px;
+    }
+
+    &:nth-child(3) {
+      padding: 76px 29px 39px;
+    }
+
+    &:nth-child(4) {
+      padding: 91px 26px 43px;
+    }
+  }
+}

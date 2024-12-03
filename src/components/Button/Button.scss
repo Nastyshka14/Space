@@ -1,0 +1,35 @@
+@import "../../assets/scss/base.scss";
+
+.button {
+  width: 191px;
+  height: 54px;
+  font-family: $fontLato;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26.4px;
+  border: 2px solid #ebff00;
+  border-radius: 100px;
+  background: transparent;
+  color: #ebff00;
+  transition: background-color 0.3s;
+  cursor: pointer;
+
+  &.filled {
+    border: 0;
+    background-color: #ebff00;
+    color: #000000;
+  }
+
+  &:hover {
+    opacity: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .button {
+    width: 161px;
+    height: 33px;
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+}

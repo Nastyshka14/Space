@@ -1,0 +1,123 @@
+@import "../../assets/scss/base.scss";
+
+.main {
+  display: flex;
+  position: relative;
+  padding: 91px 82px 119px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) -0.52%,
+      rgba(15, 20, 32, 0.79) 99.48%
+    ),
+    url("../../assets/images/space.jpg");
+  background-size: 100% calc(100% + 75px);
+  background-position: left -75px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  &__text {
+    max-width: 693px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  &__title {
+    font-family: $fontLato;
+    font-size: 72px;
+    font-weight: 800;
+    line-height: 72px;
+
+    .highlight {
+      color: #ff70d9;
+    }
+  }
+
+  &__description {
+    font-family: $fontLato;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.4px;
+
+    .highlight {
+      color: #f0ff00;
+    }
+  }
+
+  &__image {
+    display: flex;
+    position: absolute;
+    right: 91px;
+    top: 59px;
+  }
+
+  &__image-img {
+    width: 327px;
+    height: 367px;
+  }
+}
+
+@media (max-width: 1247px) {
+  .main {
+    padding: 100px 30px;
+    background-size: calc(100% + 73px) calc(100% + 80px);
+    background-position: 73px -80px;
+
+    &__text {
+      max-width: 411px;
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 48px;
+      line-height: 48px;
+    }
+
+    &__description {
+      font-size: 22px;
+      line-height: 26.4px;
+    }
+
+    &__image {
+      right: -73px;
+      top: 26px;
+    }
+
+    &__image-img {
+      width: 300px;
+      height: 336px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding: 250px 34px 44px;
+    justify-content: center;
+    background-size: 100% calc(100% + 48px);
+    background-position: left -48px;
+
+    &__text {
+      align-items: center;
+      gap: 17px;
+      max-width: 292px;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 36px;
+      text-align: center;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+
+    &__image {
+      left: 16px;
+      right: 0;
+      top: -68px;
+    }
+  }
+}

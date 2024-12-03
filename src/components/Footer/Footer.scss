@@ -1,0 +1,27 @@
+@import "../../assets/scss/base.scss";
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 19px;
+  background-color: $colorBlack;
+
+  &__image {
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    transform: rotate(64.48deg);
+  }
+
+  &__text {
+    font-family: $fontLato;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 28px;
+    color: #ebff00;
+  }
+}

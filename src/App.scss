@@ -1,0 +1,24 @@
+@import "./assets/scss/base.scss";
+
+.app {
+  font-family: $fontLato;
+  background-color: #0c1639;
+  color: $colorWhite;
+}
+
+.info {
+  padding: 58px 80px 60px;
+  background: linear-gradient(196.2deg, #0d1e48 0%, #304571 100%);
+}
+
+@media (max-width: 1247px) {
+  .info {
+    padding: 55px 29px 53px;
+  }
+}
+
+@media (max-width: 767px) {
+  .info {
+    padding: 50px 20px;
+  }
+}
